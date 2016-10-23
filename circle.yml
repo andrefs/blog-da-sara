@@ -4,8 +4,6 @@ machine:
 dependencies:
   override:
     - npm install
-  pre:
-    - ./bin/setup.sh
 deployment:
   production:
     branch: master
