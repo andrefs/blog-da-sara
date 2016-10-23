@@ -13,3 +13,7 @@ deployment:
     commands:
       - npm start
       - npm run deploy
+general:
+  branches:
+    ignore:
+      - gh-pages # list of branches to ignore
