@@ -1,4 +1,7 @@
 machine:
+  environment:
+    USER_NAME: andrefs
+    USER_EMAIL: andrefs@andrefs.com
   node:
     version: 6.4.0
 dependencies:

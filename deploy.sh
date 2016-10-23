@@ -22,6 +22,8 @@
 
 set -e
 GITURL=`git config remote.origin.url`
+git config --global user.email "$USER_EMAIL"
+git config --global user.name "$USER_NAME"
 npm install
 node build.js
 cd build
