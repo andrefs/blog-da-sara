@@ -1,4 +1,3 @@
-module.exports = function (content, length) {
-  length = length || 50;
-  return content.split(' ').slice(0, length).join(' ') + '...'
+module.exports = function (content) {
+  return content.split(' ').slice(0, 50).join(' ') + '...'
 }
