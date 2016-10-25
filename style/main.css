@@ -27,12 +27,12 @@ article p.post-meta a {
 
 .post-lead, .post-body {
     margin-bottom: 20px;
-    border-bottom: 1px solid #787878;
 }
 
 .post-lead {
     margin-top: 20px;
     font-size: 1.2em;
+    border-bottom: 1px solid #787878;
 }
 
 .post-category p {
