@@ -26,10 +26,12 @@ git config --global user.email "$USER_EMAIL"
 git config --global user.name "$USER_NAME"
 npm install
 node build.js
-cd build
-rm -rf .git/
-git init
-git remote add origin $GITURL
+rm -rf .git
+git clone $GITURL gh-pages
+cd gh-pages
+git checkout gh-pages
+rm -rf *
+cp -r ../build/* .
 git add .
-git commit -am "deploy"
+git commit -am "deploy" --allow-empty
 git push origin master:gh-pages --force
