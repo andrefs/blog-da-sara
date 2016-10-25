@@ -83,6 +83,5 @@ a:hover {
 .post-body img {
     max-width: 100%;
     display: block;
-    margin-right: auto;
-    margin-left: auto;
+    margin: 20px auto;
 }
