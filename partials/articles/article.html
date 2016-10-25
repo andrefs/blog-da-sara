@@ -18,13 +18,13 @@
         <img class="center-block" style="100%" src="{{mainMedia.fields.file.url}}">
     </div>
     {{/if}}
-    <div class="post-lead">
     {{#if lead}}
+    <div class="post-lead">
         <p>{{lead}}</p>
-    {{else}}
-        <p>{{ shorten body}}</p>
-    {{/if}}
     </div>
+    {{else}}
+    <div class="post-body" data-markdown>{{ shorten body}}</div>
+    {{/if}}
     <div class="post-actions">
         <p><a href="/{{ _fileName }}">Read more</a></p>
     </div>
