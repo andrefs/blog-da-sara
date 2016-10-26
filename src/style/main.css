@@ -8,10 +8,14 @@ body {
     background:#FDFDFD
 }
 
+article.post {
+    margin-bottom: 30px;
+}
+
 article header p.post-meta {
     font-family:"Raleway","Calibri","sans-serif";
     font-style:normal;
-    font-size:.6em;
+    font-size:.8em;
     font-weight:normal;
     color:#787878
 }
@@ -25,7 +29,7 @@ article p.post-meta a {
     color:#787878
 }
 
-.post-lead, .post-body {
+.post-lead {
     margin-bottom: 20px;
 }
 
@@ -47,19 +51,19 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 h5{
-    font-size:1em
-}
-h4{
     font-size:1.2em
 }
-h3{
+h4{
     font-size:1.4em
 }
-h2{
+h3{
     font-size:1.6em
 }
-h1{
+h2{
     font-size:1.8em
+}
+h1{
+    font-size:2em
 }
 
 a {
@@ -69,19 +73,23 @@ a {
     color:#b50a50
 }
 
-a:hover {
+a:hover, a:focus {
     text-decoration:none;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
     color: #078551;
 }
 
-.post-image img {
+.post-image img, .post-body img{
     max-width: 100%;
+    margin: 20px auto;
 }
 
 .post-body img {
-    max-width: 100%;
     display: block;
-    margin: 20px auto;
+}
+
+.post-read-more {
+    font-size: .8em;
+    font-style: italic;
 }
