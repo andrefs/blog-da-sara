@@ -13,7 +13,7 @@
                         {{#if publishedAt}}
                         <span class="post-date">{{date publishedAt}}</span> |
                         {{/if}}
-                        <span class="post-comment-count"><a href="#">Add a comment</a></span>
+                        <span class="post-comment-count"><a href="/{{ _fileName}}#disqus_thread">Add a comment</a></span>
                     </p>
                 </header>
                 {{#if mainMedia}}
@@ -29,6 +29,7 @@
                 <div class="post-body" data-markdown>{{body}}</div>
                 <div class="post-actions">
                 </div>
+                {{> article/disqus}}
             </article>
         </div>
     </div>
