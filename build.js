@@ -8,7 +8,7 @@ const dataMarkdown = require('metalsmith-data-markdown')
 const contentful   = require('contentful-metalsmith')
 const debug        = require('metalsmith-debug');
 
-const handlebars = require('handlebars')
+const handlebars = require('handlebars');
 
 // add custom helpers to handlebars
 // https://github.com/superwolff/metalsmith-layouts/issues/63
@@ -21,7 +21,7 @@ glob.sync('helpers/*.js').forEach((fileName) => {
     helper,
     require(`./${fileName}`)
   )
-})
+});
 
 Metalsmith(__dirname)
   .source('src')
@@ -29,7 +29,17 @@ Metalsmith(__dirname)
   .use(debug())
   .use(contentful({
     space_id: process.env.CTFL_SPACE_ID,
-    access_token: process.env.CTFL_ACCESS_TOKEN
+    access_token: process.env.CTFL_ACCESS_TOKEN,
+    common: {
+        postSelections: {
+            content_type: "postSelection",
+            limit: 1
+        },
+        siteSections: {
+            content_type: "siteSection",
+            limit: 1
+        }
+    }
   }))
   .use(layouts({
     engine: 'handlebars',
