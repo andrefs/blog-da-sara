@@ -110,3 +110,7 @@ a:hover, a:focus {
     font-size: .8em;
     font-style: italic;
 }
+
+#disqus_thread {
+    margin-top: 50px;
+}
