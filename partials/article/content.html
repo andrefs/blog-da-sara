@@ -7,13 +7,13 @@
                         <p class="text-center">{{category.fields.title}}</p>
                     </div>
                     <div class="post-title">
-                        <h2 class="text-center"><a href="/{{ _fileName }}">{{ title }}</a></h2>
+                        <h2 class="text-center"><a href="">{{ title }}</a></h2>
                     </div>
                     <p class="post-meta text-center">
                         {{#if publishedAt}}
                         <span class="post-date">{{date publishedAt}}</span> |
                         {{/if}}
-                        <span class="post-comment-count"><a href="/{{ _fileName}}#disqus_thread">Add a comment</a></span>
+                        <span class="post-comment-count"><a href="#disqus_thread">Add a comment</a></span>
                     </p>
                 </header>
                 {{#if mainMedia}}
