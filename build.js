@@ -6,6 +6,7 @@ const sass         = require('metalsmith-sass')
 const markdown     = require('metalsmith-markdown')
 const dataMarkdown = require('metalsmith-data-markdown')
 const contentful   = require('contentful-metalsmith')
+const path         = require('metalsmith-path');
 const debug        = require('metalsmith-debug');
 
 const handlebars = require('handlebars');
@@ -27,6 +28,7 @@ Metalsmith(__dirname)
   .source('src')
   .destination('build')
   .use(debug())
+  .use(path())
   .use(contentful({
     space_id: process.env.CTFL_SPACE_ID,
     access_token: process.env.CTFL_ACCESS_TOKEN,
