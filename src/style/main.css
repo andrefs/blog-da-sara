@@ -89,8 +89,17 @@ a:hover, a:focus {
     margin-bottom: 20px;
 }
 
-.post-highlight img {
+.post-highlight img, .sidebar-section img {
     max-width: 100%;
+}
+
+.sidebar-section .body {
+    font-size: 14px;
+}
+
+.sidebar-section h3, .sidebar-section h5 {
+    margin: 0;
+    padding-bottom: 0;
 }
 
 .post-body img {
