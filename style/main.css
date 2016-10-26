@@ -97,6 +97,11 @@ a:hover, a:focus {
     font-size: 14px;
 }
 
+.sidebar-section h3, .sidebar-section h5 {
+    margin: 0;
+    padding-bottom: 0;
+}
+
 .post-body img {
     display: block;
 }
