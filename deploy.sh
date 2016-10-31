@@ -33,7 +33,7 @@ git pull
 git checkout gh-pages
 rm -rf *
 cp -r ../build/* .
-echo "zooeybechamel.andrefs.com" > CNAME
+echo "zooeybechamel.com" > CNAME
 git add .
 git commit -am "deploy  [ci skip]" --allow-empty
 git push origin gh-pages:gh-pages --force
