@@ -1,8 +1,8 @@
 <head>
 	<meta charset="utf-8">
 
-    <title>{{title}}</title>
-    <meta name="description" content="{{description}}" />
+    <title>{{site.title}}{{#if title}} | {{title}}{{/if}}</title>
+    <meta name="description" content="{{site.description}}" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="shortcut icon" href="/assets/favicon.ico">
 
@@ -11,32 +11,32 @@
     <link href='http://fonts.googleapis.com/css?family=Crimson+Text:400,400italic,600,600italic' rel='stylesheet' type='text/css'/>
 	<link rel="stylesheet" type="text/css" href="/style/main.css" />
 
-    <link rel="canonical" href="{{site_url}}" />
+    <link rel="canonical" href="{{site.url}}" />
     <meta name="referrer" content="origin" />
 
-    <meta property="og:site_name" content="{{site_title}}" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="{{site_title}}" />
-    <meta property="og:description" content="{{description}}" />
-    <meta property="og:url" content="{{site_url}}" />
-    <meta property="og:image" content="{{header_bg_url}}" />
+    <meta property="og:site_name"    content ="{{site.title}}"      />
+    <meta property="og:type"         content ="website"             />
+    <meta property="og:title"        content ="{{#if title}}{{title}}{{else}}{{site.title}}{{/if}}" />
+    <meta property="og:description"  content ="{{site.description}}"     />
+    <meta property="og:url"          content ="{{site.url}}"        />
+    <meta property="og:image"        content ="{{#if mainMedia}}{{mainMedia.fields.file.url}}{{else}}{{site.image}}{{/if}}" />
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="{{site_title}}" />
-    <meta name="twitter:description" content="{{description}}" />
-    <meta name="twitter:url" content="{{site_url}}" />
-    <meta name="twitter:image:src" content="{{header_bg_url}}" />
+    <meta name="twitter:card"        content ="summary_large_image" />
+    <meta name="twitter:title"       content ="{{#if title}}{{title}}{{else}}{{site.title}}{{/if}}" />
+    <meta name="twitter:description" content ="{{site.description}}" />
+    <meta name="twitter:url"         content ="{{site.url}}"         />
+    <meta name="twitter:image:src"   content ="{{#if mainMedia}}{{mainMedia.fields.file.url}}{{else}}{{site.image}}{{/if}}"    />
 
     <script type="application/ld+json">
 {
     "@context": "http://schema.org",
     "@type": "Website",
-    "publisher": "{{site_title}}",
-    "url": "{{site_url}}",
-    "image": "{{header_bg_url}}",
-    "description": "{{description}}"
+    "publisher": "{{site.title}}",
+    "url": "{{site.url}}",
+    "image": "{{#if mainMedia}}{{mainMedia.fields.file.url}}{{else}}{{site.image}}{{/if}}",
+    "description": "{{site.description}}"
 }
     </script>
 
-    <link rel="alternate" type="application/rss+xml" title="{{site_title}}" href="{{site_url}}" />
+    <link rel="alternate" type="application/rss+xml" title="{{site.title}}" href="{{site.url}}" />
 </head>

@@ -8,6 +8,7 @@ const dataMarkdown = require('metalsmith-data-markdown')
 const contentful   = require('contentful-metalsmith')
 const path         = require('metalsmith-path');
 const debug        = require('metalsmith-debug');
+const metaobject   = require('metalsmith-metaobject');
 
 const handlebars = require('handlebars');
 
@@ -41,6 +42,13 @@ Metalsmith(__dirname)
             content_type: "siteSection",
             limit: 1
         }
+    }
+  }))
+  .use(metaobject({
+    site: {
+     url: 'http://zooeybechamel.com',
+     title: 'Zooey Béchamel',
+     description: 'My personal blog'
     }
   }))
   .use(layouts({
