@@ -13,8 +13,8 @@
             {{#if lead}}{{fields.lead}}{{else}}{{ shorten fields.body}}{{/if}}
         </description>
         <pubDate>{{ fields.publishedAt }}</pubDate>
-        <link>{{ site.url }}/article/{{ fields.slug }}.html</link>
-        <guid isPermaLink="true">{{ site.url }}/article/{{ fields.slug }}.html</guid>
+        <link>{{ ../site.url }}/article/{{ fields.slug }}.html</link>
+        <guid isPermaLink="true">{{ ../site.url }}/article/{{ fields.slug }}.html</guid>
     </item>
     {{/each}}
 </rss>

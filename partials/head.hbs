@@ -19,13 +19,13 @@
     <meta property="og:title"        content ="{{#if title}}{{title}}{{else}}{{site.title}}{{/if}}" />
     <meta property="og:description"  content ="{{site.description}}"     />
     <meta property="og:url"          content ="{{site.url}}"        />
-    <meta property="og:image:url"    content ="{{#if mainMedia}}http:{{mainMedia.fields.file.url}}{{else}}{{site.image}}{{/if}}" />
+    <meta property="og:image:url"    content ="{{#if mainMedia}}http:{{mainMedia.fields.file.url}}{{else if site.image}}{{site.image}}{{else}}http:{{common.siteSections.items.[0].fields.photo.fields.file.url}}{{/if}}" />
 
     <meta name="twitter:card"        content ="summary_large_image" />
     <meta name="twitter:title"       content ="{{#if title}}{{title}}{{else}}{{site.title}}{{/if}}" />
     <meta name="twitter:description" content ="{{site.description}}" />
     <meta name="twitter:url"         content ="{{site.url}}"         />
-    <meta name="twitter:image"       content ="{{#if mainMedia}}http:{{mainMedia.fields.file.url}}{{else}}{{site.image}}{{/if}}" />
+    <meta name="twitter:image"       content ="{{#if mainMedia}}http:{{mainMedia.fields.file.url}}{{else if site.image}}{{site.image}}{{else}}http:{{common.siteSections.items.[0].fields.photo.fields.file.url}}{{/if}}" />
 
     <script type="application/ld+json">
 {
@@ -33,7 +33,7 @@
     "@type": "Website",
     "publisher": "{{site.title}}",
     "url": "{{site.url}}",
-    "image": "{{#if mainMedia}}http:{{mainMedia.fields.file.url}}{{else}}{{site.image}}{{/if}}",
+    "image": "{{#if mainMedia}}http:{{mainMedia.fields.file.url}}{{else if site.image}}{{site.image}}{{else}}http:{{common.siteSections.items.[0].fields.photo.fields.file.url}}{{/if}}",
     "description": "{{site.description}}"
 }
     </script>
