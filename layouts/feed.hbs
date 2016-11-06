@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>{{ site.title }}</title>
+        <description>{{ site.description }}</description>
+        <link>{{ site.url }}</link>
+    </channel>
+    <atom:link href="{{ site.url }}/feed.xml" rel="self" type="application/rss+xml" />
+    {{#each data.entries}}
+    <item>
+        <title>{{ fields.title }}</title>
+        <description>
+            {{#if lead}}{{fields.lead}}{{else}}{{ shorten fields.body}}{{/if}}
+        </description>
+        <pubDate>{{ fields.publishedAt }}</pubDate>
+        <link>{{ site.url }}/article/{{ fields.slug }}.html</link>
+        <guid isPermaLink="true">{{ site.url }}/article/{{ fields.slug }}.html</guid>
+    </item>
+    {{/each}}
+</rss>
