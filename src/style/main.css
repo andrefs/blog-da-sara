@@ -9,8 +9,22 @@ body {
     text-align:left;
 }
 
+.blog-header {
+    background:#fcfcfc;
+    box-shadow:0px 0px 4px 0px rgba(0,0,0,0.10);
+    height:120px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.blog-header > .container {
+    align-self: center;
+}
+
 article.post {
     margin-bottom: 30px;
+    border-bottom:1px solid #e6c7b8;
 }
 
 article header p.post-meta {
@@ -110,7 +124,7 @@ a:hover, a:focus {
 }
 
 
-.sidebar-section h3 {
+.blog-sidebar h3 {
     font-family:Raleway;
     font-weight: bold;
     text-transform: uppercase;
@@ -120,7 +134,7 @@ a:hover, a:focus {
     line-height:40px;
     text-align:left;
 
-    margin-top: 20px;
+    margin-top: 0;
     margin-bottom: 30px;
     padding-bottom: 0;
 
@@ -145,10 +159,35 @@ a:hover, a:focus {
 }
 
 .post-read-more {
-    font-size: .8em;
-    font-style: italic;
+    font-family:Raleway;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size:11px;
+    color:#d9916c;
+    letter-spacing:3px;
+    line-height:40px;
+    text-align:left;
+    margin: 15px 0 0 0;
 }
+
+.post-read-more a {
+    color:#d9916c;
+}
+
 
 #disqus_thread {
     margin-top: 50px;
+}
+
+.blog-sidebar .post-title {
+    font-family:EB Garamond;
+    font-size:18px;
+    color:#000000;
+    letter-spacing:0px;
+    line-height:22px;
+    text-align:center;
+}
+
+.blog-sidebar h5.mailto a {
+    color:#d9916c;
 }

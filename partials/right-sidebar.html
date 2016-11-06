@@ -1,4 +1,4 @@
-<div class="col-sm-3 blog-sidebar">
+<div class="col-md-3 blog-sidebar">
     <div class="row">
         <div class="col-sm-12 sidebar-section">
             {{#if common.siteSections.items.[0].fields.title}}
@@ -7,7 +7,7 @@
             <img class="center-block" src="{{common.siteSections.items.[0].fields.photo.fields.file.url}}">
             <div class="body">{{common.siteSections.items.[0].fields.body}}</div>
             {{#if common.siteSections.items.[0].fields.subTitle}}
-            <h5 class="text-center">{{common.siteSections.items.[0].fields.subTitle}}</h5>
+            <h5 class="mailto">{{{ mailto common.siteSections.items.[0].fields.subTitle}}}</h5>
             {{/if}}
         </div>
     </div>

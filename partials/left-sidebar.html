@@ -1,12 +1,12 @@
-<div class="col-sm-2 blog-sidebar">
+<div class="col-md-2 blog-sidebar">
     <div class="row">
         <div class="col-sm-12">
             <h3>{{common.postSelections.items.[0].fields.title}}</h3>
         </div>
     {{#each common.postSelections.items.[0].fields.posts}}
         <div class="col-sm-12 post-highlight">
-            <img class="center-block" src="{{fields.mainMedia.fields.file.url}}">
-            <h5 class="post-title text-center">{{fields.title}}</h5>
+            <a href="/article/{{ fields.slug }}.html"><img class="center-block" src="{{fields.mainMedia.fields.file.url}}"></a>
+            <h5 class="post-title text-center"><a href="/article/{{ fields.slug }}.html">{{fields.title}}</a></h5>
         </div>
     {{/each}}
     </div>
