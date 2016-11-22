@@ -6,31 +6,4 @@
         <link>http://zooeybechamel.com</link>
     </channel>
     <atom:link href="http://zooeybechamel.com/feed.xml" rel="self" type="application/rss+xml" />
-    <item>
-        <title>Baked Apple Cider Donuts</title>
-        <description>
-            I like round food. Pizza, baked donuts, biscuits. I guess I should clarify, I like round food with flour. Wheat flour if possible. I’ve passed this trait on to Hal (along with my stubbornness). Couldn’t some of my better qualities seep through to her?  The good news—meal times are...
-        </description>
-        <pubDate>2016-10-22T00:00+02:00</pubDate>
-        <link>http://zooeybechamel.com/article/baked-apple-cider-donuts.html</link>
-        <guid isPermaLink="true">http://zooeybechamel.com/article/baked-apple-cider-donuts.html</guid>
-    </item>
-    <item>
-        <title>Molly’s Chocolate Halva Babka</title>
-        <description>
-            It’s a Molly Mash-up! I took her Pimiento Cheese Babka recipe from her new book Molly on the Range. Deleted the pimiento cheese because I gave my mom a hard time about eating pimiento cheese sandwiches my whole life. (I can’t go back on my word now.) And added in...
-        </description>
-        <pubDate></pubDate>
-        <link>http://zooeybechamel.com/article/molly-s-chocolate-halva-babka.html</link>
-        <guid isPermaLink="true">http://zooeybechamel.com/article/molly-s-chocolate-halva-babka.html</guid>
-    </item>
-    <item>
-        <title>Carrot Cake</title>
-        <description>
-            I never played in the World Cup. Nor did I get that green VW Bug (besides the model car my dad bought as a cruel joke on my sixteenth birthday). But I baked. I know that doesn’t necessarily make me a baker. My business card still reads designer. And I...
-        </description>
-        <pubDate></pubDate>
-        <link>http://zooeybechamel.com/article/carrot-cake.html</link>
-        <guid isPermaLink="true">http://zooeybechamel.com/article/carrot-cake.html</guid>
-    </item>
 </rss>
