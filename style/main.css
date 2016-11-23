@@ -76,13 +76,11 @@ h1.blog-title {
 }
 
 .post-lead {
-    margin-bottom: 20px;
 }
 
 .post-lead {
-    margin-top: 20px;
+    margin-top: 10px;
     font-size: 1.2em;
-    border-bottom: 1px solid #787878;
 }
 
 .post-category p {
@@ -152,6 +150,11 @@ a:hover, a:focus {
     text-align:left;
     margin-top: 20px;
     padding-bottom: 0;
+}
+
+.post-body {
+    padding-top: 20px;
+    border-top: 1px solid #787878;
 }
 
 .post-body img {
