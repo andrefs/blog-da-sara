@@ -17,14 +17,21 @@
     <meta property="og:site_name"    content ="{{site.title}}"      />
     <meta property="og:type"         content ="website"             />
     <meta property="og:title"        content ="{{#if title}}{{title}}{{else}}{{site.title}}{{/if}}" />
-    <meta property="og:description"  content ="{{site.description}}"     />
-    <meta property="og:url"          content ="{{site.url}}"        />
+    <meta property="og:url"          content ="{{site.url}}/{{_fileName}}"        />
     <meta property="og:image:url"    content ="{{#if mainMedia}}http:{{mainMedia.fields.file.url}}{{else if site.image}}{{site.image}}{{else}}http:{{common.siteSections.items.[0].fields.photo.fields.file.url}}{{/if}}" />
 
     <meta name="twitter:card"        content ="summary_large_image" />
     <meta name="twitter:title"       content ="{{#if title}}{{title}}{{else}}{{site.title}}{{/if}}" />
-    <meta name="twitter:description" content ="{{site.description}}" />
-    <meta name="twitter:url"         content ="{{site.url}}"         />
+    {{#if title}}
+        {{#if lead}}
+            <meta name="twitter:description" content ="{{lead}}" />
+            <meta property="og:description"  content ="{{lead}}" />
+        {{/if}}
+    {{else}}
+        <meta name="twitter:description" content ="{{site.description}}" />
+        <meta property="og:description"  content ="{{site.description}}" />
+    {{/if}}
+    <meta name="twitter:url"         content ="{{site.url}}/{{_fileName}}"         />
     <meta name="twitter:image"       content ="{{#if mainMedia}}http:{{mainMedia.fields.file.url}}{{else if site.image}}{{site.image}}{{else}}http:{{common.siteSections.items.[0].fields.photo.fields.file.url}}{{/if}}" />
 
     <script type="application/ld+json">
