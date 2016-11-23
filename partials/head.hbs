@@ -18,10 +18,11 @@
     <meta property="og:type"         content ="website"             />
     <meta property="og:title"        content ="{{#if title}}{{title}}{{else}}{{site.title}}{{/if}}" />
     <meta property="og:url"          content ="{{site.url}}/{{_fileName}}"        />
-    <meta property="og:image:url"    content ="{{#if mainMedia}}http:{{mainMedia.fields.file.url}}{{else if site.image}}{{site.image}}{{else}}http:{{common.siteSections.items.[0].fields.photo.fields.file.url}}{{/if}}" />
 
     <meta name="twitter:card"        content ="summary_large_image" />
     <meta name="twitter:title"       content ="{{#if title}}{{title}}{{else}}{{site.title}}{{/if}}" />
+    <meta name="twitter:url"         content ="{{site.url}}/{{_fileName}}"         />
+
     {{#if title}}
         {{#if lead}}
             <meta name="twitter:description" content ="{{lead}}" />
@@ -31,8 +32,16 @@
         <meta name="twitter:description" content ="{{site.description}}" />
         <meta property="og:description"  content ="{{site.description}}" />
     {{/if}}
-    <meta name="twitter:url"         content ="{{site.url}}/{{_fileName}}"         />
-    <meta name="twitter:image"       content ="{{#if mainMedia}}http:{{mainMedia.fields.file.url}}{{else if site.image}}{{site.image}}{{else}}http:{{common.siteSections.items.[0].fields.photo.fields.file.url}}{{/if}}" />
+    {{#if mainMedia}}
+        <meta property="og:image:url" content ="http:{{mainMedia.fields.file.url}}?w=600" />
+        <meta name="twitter:image"    content ="http:{{mainMedia.fields.file.url}}?w=600" />
+    {{else if site.image}}
+        <meta property="og:image:url" content ="http:{{site.image}}?w=600" />
+        <meta name="twitter:image"    content ="http:{{site.image}}?w=600" />
+    {{else}}
+        <meta property="og:image:url" content ="http:{{common.siteSections.items.[0].fields.photo.fields.file.url}}?w=600" />
+        <meta name="twitter:image"    content ="http:{{common.siteSections.items.[0].fields.photo.fields.file.url}}?w=600" />
+    {{/if}}
 
     <script type="application/ld+json">
 {
