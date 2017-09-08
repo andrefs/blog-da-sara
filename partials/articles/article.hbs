@@ -7,6 +7,8 @@
             {{/if}}
             {{#if publishedAt}}
                 <span>{{date publishedAt}}</span> //
+            {{else if updatedAt}}
+                <span>{{date updatedAt}}</span> //
             {{/if}}
             <span class="post-comment-count"><a href="{{_fileName}}#disqus_thread">0 comments</a></span>
             </p>
