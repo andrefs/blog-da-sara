@@ -7,24 +7,6 @@
     </channel>
     <atom:link href="http://zooeybechamel.com/feed.xml" rel="self" type="application/rss+xml" />
     <item>
-        <title>Firsts</title>
-        <description>
-            I&#x27;ve moved to Berlin 5 months ago. It was the first time that I moved out of my country. And I had actually never been to Berlin before so it&#x27;s hard to explain why I was so excited with the idea some months before deciding. I&#x27;ve always said I wanted...
-        </description>
-        <pubDate>2016-11-23T00:00+01:00</pubDate>
-        <link>http://zooeybechamel.com/article/firsts.html</link>
-        <guid isPermaLink="true">http://zooeybechamel.com/article/firsts.html</guid>
-    </item>
-    <item>
-        <title>Seconds</title>
-        <description>
-            It&#x27;s been two months since I&#x27;ve moved out of Berlin. I know it sounds strange since my first post was about beginning, my beginning in Berlin. I did try to love a world where the warmth of the sun was rare. But I guess people are right about love: you...
-        </description>
-        <pubDate></pubDate>
-        <link>http://zooeybechamel.com/article/seconds.html</link>
-        <guid isPermaLink="true">http://zooeybechamel.com/article/seconds.html</guid>
-    </item>
-    <item>
         <title>The best cheesecake in the world</title>
         <description>
             Phil Dunphy once said “the most amazing things that can happen to a human being will happen to you, if you just lower your expectations”. So I guess that choosing “the best X of the world” as a title kind of goes against his theory. Sorry Phil!
@@ -36,6 +18,15 @@ But as a cheesecake...
         <guid isPermaLink="true">http://zooeybechamel.com/article/the-best-cheesecake-in-the-world.html</guid>
     </item>
     <item>
+        <title>Seconds</title>
+        <description>
+            It&#x27;s been two months since I&#x27;ve moved out of Berlin. I know it sounds strange since my first post was about beginning, my beginning in Berlin. I did try to love a world where the warmth of the sun was rare. But I guess people are right about love: you...
+        </description>
+        <pubDate></pubDate>
+        <link>http://zooeybechamel.com/article/seconds.html</link>
+        <guid isPermaLink="true">http://zooeybechamel.com/article/seconds.html</guid>
+    </item>
+    <item>
         <title>Here comes the sun</title>
         <description>
             &quot;Thanks&quot; to global warming, there are no seasons anymore. At least in Portugal, I can&#x27;t really speak for the world. But even though the weather is unseasonly warm and the strong winter sun is surfing through the skies, it&#x27;s not really summer. It&#x27;s more of a summer tease. You know,...
@@ -43,5 +34,14 @@ But as a cheesecake...
         <pubDate></pubDate>
         <link>http://zooeybechamel.com/article/here-comes-the-sun.html</link>
         <guid isPermaLink="true">http://zooeybechamel.com/article/here-comes-the-sun.html</guid>
+    </item>
+    <item>
+        <title>Firsts</title>
+        <description>
+            I&#x27;ve moved to Berlin 5 months ago. It was the first time that I moved out of my country. And I had actually never been to Berlin before so it&#x27;s hard to explain why I was so excited with the idea some months before deciding. I&#x27;ve always said I wanted...
+        </description>
+        <pubDate>2016-11-23T00:00+01:00</pubDate>
+        <link>http://zooeybechamel.com/article/firsts.html</link>
+        <guid isPermaLink="true">http://zooeybechamel.com/article/firsts.html</guid>
     </item>
 </rss>
